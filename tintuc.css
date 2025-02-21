@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #021800;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #0006534e;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: 85px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 31, 3);
+}
+
+.left {
+    position: absolute;
+    float: left;
+    left: 5px;
+}
+
+.left img {
+    top: 0px;
+    width: 500px;
+    height: 100px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    position: absolute;
+    right: 50px;
+}
+
+.right li {
+    margin-left: 100px;
+    background-color: #0009824e;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.right li:hover {
+    background-color: #ff5900;
+    transition: 0.5s;
+    color: white;
+}
+
+.right li a:hover {
+    color: white;
+}
+
+
+.right li a {
+    font-size: large;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+footer {
+    bottom: 0;
+    background-color: #0006534e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-left h3 {
+    margin-bottom: 10px;
+}
+
+footer .footer-left p {
+    margin: 5px 0;
+}
+
+header li:active {
+    background-color: #1f3c00;
+}
+
+.submenu {
+    float: left;
+    width: 17%;
+    height: auto;
+}
+
+.submenu ul {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgba(31, 31, 31, 0.5);
+    width: 250px;
+    top: 85px;
+    left: 0;
+}
+
+.submenu ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 20px;
+    font-style: italic;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(132, 132, 132);
+    width: 100%;
+}
+
+.submenu ul li:hover {
+    background-color: rgb(255, 197, 197, 0.5)
+}
+
+.submenu a {
+    animation: nhapnhay 1s infinite;
+}
+
+@keyframes nhapnhay {
+    0% {
+        color: #ffffff;
+    }
+
+    25% {
+        color: #ff5900
+    }
+
+    50% {
+        color: #ffcc00;
+    }
+
+    75% {
+        color: #c0ffba;
+    }
+
+    100% {
+        color: #c997ff;
+    }
+}
+
+@keyframes nhapnhay1 {
+    0% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #c996ff;
+    }
+}
+
+@keyframes phongto {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes phongto11 {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mycontent {
+    float: left;
+    width: 83%;
+    height: 720px;
+}
+
+.top {
+    margin: 10px;
+    height: 47%;
+    display: flex;
+}
+
+.bottom {
+    margin: 10px;
+    height: 49%;
+    display: flex;
+}
+
+.content {
+    margin: 10px 0;
+}
+
+.content i {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0006534e;
+}
+
+.content i img {
+    animation: phongto11 15s infinite;
+}
+
+.top i img {
+    margin: 5px 0;
+    width: 90%;
+    height: 75%;
+    border-radius: 5px;
+}
+
+.top i {
+    border: solid 1px rgb(132, 132, 132);
+    text-align: center;
+    color: white;
+    margin: 0 5px;
+}
+
+.top i p {
+    margin-top: 18px;
+}
+
+.bottom i {
+    border: solid 1px rgb(132, 132, 132);
+    text-align: center;
+    color: white;
+    margin: 0 5px;
+}
+
+.bottom i img {
+    margin: 5px;
+    width: 90%;
+    height: 75%;
+    border-radius: 5px;
+}
+
+.bottom i p {
+    margin-top: 18px;
+}
