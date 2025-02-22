@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            left: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(./442482235_1063254438555854_7533344736764390377_n.jpg);
+        }
+
+        .box {
+            width: 330px;
+            height: 470px;
+            background-color: white;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgb(95, 95, 95);
+        }
+
+        .box h3 {
+            padding: 10px;
+            color: rgb(0, 38, 20);
+            font-weight: 500px;
+            font-size: 30px;
+        }
+
+        .box input {
+            margin-top: 40px;
+            width: 250px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgb(95, 95, 95);
+        }
+
+        .box i {
+            font-size: 100px;
+            cursor: pointer;
+            animation: nhapnhay 3s infinite;
+        }
+
+        .submit {
+            width: 300px;
+            height: 40px;
+            background-color: rgb(0, 38, 20);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        @keyframes nhapnhay {
+            0% {
+                color: #4c0000;
+            }
+
+            25% {
+                color: #1a0900
+            }
+
+            50% {
+                color: #443600;
+            }
+
+            75% {
+                color: #032600;
+            }
+
+            100% {
+                color: #1f0040;
+            }
+        }
+
+        @keyframes nhapnhay1 {
+            0% {
+                color: #ff000018;
+            }
+
+            25% {
+                color: #ffffff
+            }
+
+            50% {
+                color: #ffcc00;
+            }
+
+            75% {
+                color: #15ff00;
+            }
+
+            100% {
+                color: #7b00ff;
+            }
+        }
+
+        @keyframes dichuyen {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .thongbao {
+            width: 100vw;
+            height: 70px;
+            background-color: rgb(0, 0, 0, 0.5);
+        }
+
+        .thongbao p {
+            margin-bottom: 10px;
+            animation: dichuyen 60s infinite;
+            color: white;
+        }
+
+        .thongbao h3 {
+            text-align: center;
+            animation: nhapnhay1 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thongbao">
+        <h3>THÔNG BÁO</h3>
+        <p>💖 Một lần nữa, BEC xin gửi lời cảm ơn chân thành đến tất cả mọi người, những mảnh ghép quan trọng đã
+            góp phần tạo nên 𝐋𝐞̂̃ 𝐡𝐨̣̂𝐢 𝐦𝐮̀𝐚 𝐗𝐮𝐚̂𝐧: 𝐒𝐚̆́𝐜 𝐗𝐮𝐚̂𝐧 𝟐𝟎𝟐𝟓 - 𝐒𝐩𝐫𝐢𝐧𝐠
+            𝐐𝐮𝐢𝐧𝐭𝐞𝐬𝐬𝐞𝐧𝐜𝐞 thành công rực rỡ</p>
+    </div>
+    <form id="loginForm">
+        <div class="box">
+            <h3>Login to enter</h3>
+            <i class='bx bxs-ghost'></i>
+            <br>
+            <label for="" name="Tên đăng nhập"></label>
+            <input type="text" placeholder=" Tài khoản" id="username" name="username">
+
+            <label for="" name="Mật khẩu"></label>
+            <input type="password" placeholder=" Mật khẩu" id="password" name="password">
+
+            <input type="submit" value="Đăng nhập" class="submit">
+        </div>
+    </form>
+    <script src="./login.js"></script>
+</body>
+
+</html>
